@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+    <meta charset="UTF-8">
+    <title>2b2t.ro</title>
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta charset="UTF-8">
-    <title>2b2t.ro</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/RO_GJ_Rovinari.jpg/1280px-RO_GJ_Rovinari.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: #000;
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
         }
-
+        img.bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            font-family: Arial, sans-serif;
+            color: #000;
+            padding: 20px;
+        }
         h1 {
             text-align: center;
             margin-top: 20px;
         }
-
         h2 {
             text-align: center;
             font-weight: normal;
         }
-
         .section {
             max-width: 800px;
             margin: 20px auto;
@@ -38,69 +46,66 @@
             border: 2px solid #000;
             border-radius: 5px;
         }
-
         .section-title {
             font-weight: bold;
             text-decoration: underline;
             margin-bottom: 10px;
         }
-
         p {
             margin: 10px 0;
         }
-
         a {
             color: #0000ff;
             text-decoration: none;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
         .ip-inline {
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>
-        <strong>
-            <span style="color: #0000ff;">2B</span>
-            <span style="color: #ffff00;">2T</span>
-            <span style="color: #ff0000;">.RO</span>
-        </strong>
-    </h1>
-    <h2>Primul și singurul server de anarhie românesc de Minecraft.</h2>
+    <img class="bg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/RO_GJ_Rovinari.jpg/1280px-RO_GJ_Rovinari.jpg" alt="Background">
 
-    <div class="section">
-        <div class="section-title">Informații</div>
-        <p>
-            IP-ul serverului este 
-            <span class="ip-inline" 
-                  onclick="navigator.clipboard.writeText('2b2t.ro')" 
-                  title="Click pentru a copia">
-                mc.2b2t.ro
-            </span>. 
-            Are vreo 4 GB de RAM. Nu vă așteptați la cine știe ce performanță. Poate susține maxim 30 de jucători. Mă scuzați pentru website însă știu doar HTML.
-            <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
-            Momentan sunt <span data-playercounter-ip="mc.2b2t.ro">0</span> de jucători online.
-        </p>
-    </div>
+    <div class="content">
+        <h1>
+            <strong>
+                <span style="color: #0000ff;">2B</span>
+                <span style="color: #ffff00;">2T</span>
+                <span style="color: #ff0000;">.RO</span>
+            </strong>
+        </h1>
+        <h2>Primul și singurul server de anarhie românesc de Minecraft.</h2>
 
-    <div class="section">
-        <div class="section-title">Reguli</div>
-        <p>Niciuna. Bineînțeles, fără doxxing și chestii de genul.</p>
-    </div>
+        <div class="section">
+            <div class="section-title">Informații</div>
+            <p>
+                IP-ul serverului este 
+                <span class="ip-inline" onclick="navigator.clipboard.writeText('2b2t.ro')" title="Click pentru a copia">
+                    mc.2b2t.ro
+                </span>. 
+                Are vreo 4 GB de RAM. Nu vă așteptați la cine știe ce performanță. Poate susține maxim 30 de jucători. Mă scuzați pentru website însă știu doar HTML.
+                <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+                Momentan sunt <span data-playercounter-ip="mc.2b2t.ro">0</span> de jucători online.
+            </p>
+        </div>
 
-    <div class="section">
-        <div class="section-title">Contact</div>
-        <p>Mă puteți găsi la adresa de email <a href="mailto:admin@2b2t.ro">admin@2b2t.ro</a>. Dacă vi se pare demodată treaba cu emailul, îmi puteți trimite mesaj pe Discord la userul sudwski.</p>
-    </div>
+        <div class="section">
+            <div class="section-title">Reguli</div>
+            <p>Niciuna. Bineînțeles, fără doxxing și chestii de genul.</p>
+        </div>
 
-    <div class="section">
-        <div class="section-title">Donații</div>
-        <p>Momentan, întreținerea serverului costă vreo 25 de lei. Prețul va crește odată cu numărul de jucători pe acesta. Dacă vreți să donați, mă puteți găsi la adresele de contact.</p>
+        <div class="section">
+            <div class="section-title">Contact</div>
+            <p>Mă puteți găsi la adresa de email <a href="mailto:admin@2b2t.ro">admin@2b2t.ro</a>. Dacă vi se pare demodată treaba cu emailul, îmi puteți trimite mesaj pe Discord la userul sudwski.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Donații</div>
+            <p>Momentan, întreținerea serverului costă vreo 25 de lei. Prețul va crește odată cu numărul de jucători pe acesta. Dacă vreți să donați, mă puteți găsi la adresele de contact.</p>
+        </div>
     </div>
 </body>
 </html>
