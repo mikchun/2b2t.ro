@@ -49,9 +49,11 @@
         a:hover {
             text-decoration: underline;
         }
-        .ip-box {
-    text-align: center;
-}
+
+        .ip-inline {
+            font-family: monospace;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -63,11 +65,19 @@
         </strong>
     </h1>
     <h2>Primul și singurul server de anarhie românesc de Minecraft.</h2>
+
     <div class="section">
         <div class="section-title">Informații</div>
-        <p><p>
-    IP: <span style="font-family: monospace; user-select: all;">2b2t.ro</span>
-</p>Are vreo 4 GB de RAM. Nu vă așteptați la cine știe ce performanță. Poate susține maxim 30 de jucători. Mă scuzați pentru website însă știu doar HTML.</p>
+
+        <p>
+            IP-ul serverului este 
+            <span class="ip-inline" 
+                  onclick="navigator.clipboard.writeText('2b2t.ro')" 
+                  title="Click pentru a copia">
+                2b2t.ro
+            </span>. 
+            Are vreo 4 GB de RAM. Nu vă așteptați la cine știe ce performanță. Poate susține maxim 30 de jucători. Mă scuzați pentru website însă știu doar HTML.
+        </p>
     </div>
 
     <div class="section">
